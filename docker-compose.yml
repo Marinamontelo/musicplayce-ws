@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+    musicplayce-ws:
+        image:  marinamontelo/musicplayce-ws       
+        build: .
+        ports:
+            - "8080:8080"
+        restart: always
+
+
+      
