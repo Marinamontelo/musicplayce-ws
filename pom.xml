@@ -9,17 +9,17 @@
 		<version>2.1.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.musicplayce</groupId>
-	<artifactId>musicplayce-ws</artifactId>
+	<groupId>br.com.zssn</groupId>
+	<artifactId>zssn-ws</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>musicplayce</name>
+	<name>zssn</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding> UTF-8 </project.build.sourceEncoding>
-		<start-class> br.com.musicplayce.MusicplayceApplication </start-class>
-		<docker.image.name> marinamontelo/musicplayce </docker.image.name>
+		<start-class> br.com.zssn.ZssnApplication </start-class>
+		<docker.image.name> marinamontelo/zssn </docker.image.name>
 		<docker.image.tag> latest </docker.image.tag>
 	</properties>
 

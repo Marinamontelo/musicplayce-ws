@@ -1,13 +1,14 @@
-package br.com.musicplayce.service;
+package br.com.zssn.service;
 
 import java.util.List;
 
-import br.com.musicplayce.entity.StringMP;
+import br.com.zssn.entity.Survivor;
 
-public interface IStringMPService  {
+public interface ISurvivorService  {
 
-	List<StringMP> findAll();
-	StringMP save(StringMP stringMP);
+	List<Survivor> findAll();
+	Survivor getOne(Long id);
+	Survivor save(Survivor stringMP);
 	void delete(Long id);
 
 

@@ -1,4 +1,4 @@
-package br.com.musicplayce.musicplayce;
+package br.com.zssn.tests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MusicplayceApplicationTests {
+public class ZssnApplicationTests {
 
 	@Test
 	public void contextLoads() {

@@ -22,6 +22,14 @@ ou
 mvn spring-boot:run
 ```
 
+### deploy com docker
+Na pasta raiz do projeto após instalação execute:
+
+```bash
+docker-compose up
+```
+
+
 ## Serviços disponiveis:
 ### GET
 retorna lista de strings cadastradas;

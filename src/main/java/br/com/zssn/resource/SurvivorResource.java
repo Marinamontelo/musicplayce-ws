@@ -1,4 +1,4 @@
-package br.com.musicplayce.resource;
+package br.com.zssn.resource;
 
 import java.util.List;
 
@@ -11,32 +11,37 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.musicplayce.entity.StringMP;
-import br.com.musicplayce.service.IStringMPService;
+import br.com.zssn.entity.Survivor;
+import br.com.zssn.service.ISurvivorService;
 
 @RestController
-@RequestMapping("string-mp")
-public class StringMPResource {
+@RequestMapping("survivors")
+public class SurvivorResource {
 
 	@Autowired
-	IStringMPService service;
+	ISurvivorService service;
 	
 	
 	@GetMapping
-	public List<StringMP> findAll() {		
+	public List<Survivor> findAll() {		
 		return this.service.findAll();
 	}
 	
+	@PostMapping(path="/update")
+	public Survivor updateLastLocation(@RequestBody Survivor entity) {	
+		Survivor survivor = this.service.getOne(entity.getId());
+		return this.service.(entity);
+	}
+	
 	@PostMapping
-	public StringMP save(@RequestBody StringMP stringMP ) {		
-		return this.service.save(stringMP);
+	public Survivor save(@RequestBody Survivor entity ) {		
+		return this.service.save(entity);
 	}
 	
 	@DeleteMapping(path = "/delete/{id}")
 	public void delete(@PathVariable("id") Long id ) {		
 		this.service.delete(id);
-	}
-	
+	}	
 	
 	
 }

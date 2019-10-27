@@ -2,7 +2,7 @@ version: "3"
 services:
 
     musicplayce-ws:
-        image:  marinamontelo/musicplayce-ws       
+        image:  marinamontelo/zssn-ws       
         build: .
         ports:
             - "8080:8080"

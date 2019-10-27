@@ -1,35 +1,40 @@
-package br.com.musicplayce.service.impl;
+package br.com.zssn.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.musicplayce.entity.StringMP;
-import br.com.musicplayce.repository.IStringMPRepository;
-import br.com.musicplayce.service.IStringMPService;
+import br.com.zssn.entity.Survivor;
+import br.com.zssn.repository.ISurvivorRepository;
+import br.com.zssn.service.ISurvivorService;
 
 @Service
 @Transactional
-public class StringMPServiceImpl implements IStringMPService{
+public class SurvivorServiceImpl implements ISurvivorService{
 
 	@Autowired
-	IStringMPRepository repo;
+	ISurvivorRepository repo;
 	
 	
-	public StringMP save(StringMP entity) {
+	public Survivor save(Survivor entity) {
 		return this.repo.save(entity);
 	}
 	
 
-	public List<StringMP> findAll() {
+	public List<Survivor> findAll() {
 		return this.repo.findAll();
 	}
 
 
 	public void delete(Long id) {
 		this.repo.deleteById(id);
+	}
+
+	public Survivor getOne(Long id) {
+		return this.repo.getOne(id);
 	}
 }

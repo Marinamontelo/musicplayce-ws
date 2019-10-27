@@ -1,4 +1,4 @@
-package br.com.musicplayce;
+package br.com.zssn;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
